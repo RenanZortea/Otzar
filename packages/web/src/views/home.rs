@@ -1,9 +1,9 @@
 use dioxus::prelude::*;
-use ui::Outliner;
+use ui::Capture;
 
 #[component]
 pub fn Home() -> Element {
     rsx! {
-        Outliner{}
+        Capture { }
     }
 }

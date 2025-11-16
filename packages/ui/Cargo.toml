@@ -11,6 +11,7 @@ comrak = "0.47"
 markdown = "1.0"
 
 katex = { version = "0.4", optional = true }
+dioxus-primitives = { git = "https://github.com/DioxusLabs/components", version = "0.0.1", default-features = false }
 
 [features]
 native-math = ["katex"]
