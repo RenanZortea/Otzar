@@ -1,0 +1,97 @@
+.outline-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--secondary-color-4);
+}
+
+.block-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.block-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px 0;
+}
+
+.bullet-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.bullet {
+    width: 6px;
+    height: 6px;
+    background-color: var(--secondary-color-5);
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.bullet:hover {
+    transform: scale(1.5);
+    background-color: var(--primary-info-color);
+}
+
+.block-content {
+    flex-grow: 1;
+    margin-left: 8px;
+}
+
+/* Logseq-style editor */
+.block-editor {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    min-height: 1.5em;
+    line-height: 1.5;
+    padding: 0;
+    display: block;
+}
+
+.children-container {
+    margin-left: 26px; /* Indentation */
+    border-left: 1px solid var(--primary-color-6);
+    padding-left: 4px;
+}
+
+.rendered-markdown {
+    padding: 0;
+    min-height: 1.5em;
+    line-height: 1.5;
+}
+
+.empty-state {
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--secondary-color-5);
+    cursor: pointer;
+    border: 1px dashed var(--primary-color-6);
+    text-align: center;
+    border-radius: 4px;
+}
+.empty-state:hover {
+    border-color: var(--secondary-color-5);
+    color: var(--secondary-color-4);
+}
+
+/* Hide border when collapsed or empty */
+.children-container:empty {
+    border-left: none;
+}

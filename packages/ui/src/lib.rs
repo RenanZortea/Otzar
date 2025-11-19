@@ -8,3 +8,6 @@ pub use capture::Capture;
 
 mod markdown;
 pub use markdown::render_markdown;
+
+// Add the outline module
+pub mod outline;

@@ -9,6 +9,8 @@ api = { workspace = true }
 serde = { version = "1.0", features = ["derive"] }
 comrak = "0.47"
 markdown = "1.0"
+# Added "js" feature for WASM compatibility
+uuid = { version = "1.10", features = ["v4", "fast-rng", "macro-diagnostics", "js"] }
 
 katex = { version = "0.4", optional = true }
 dioxus-primitives = { git = "https://github.com/DioxusLabs/components", version = "0.0.1", default-features = false }
