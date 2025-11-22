@@ -115,7 +115,7 @@ pub fn BlockNode(
             // Recursive Children
             if !children.read().is_empty() && !collapsed() {
                 div { class: "children-container",
-                    for (i, child) in children.read().iter().enumerate() {
+                    for child in children.read().iter() {
                         BlockNode {
                             key: "{child.id}",
                             block: *child,

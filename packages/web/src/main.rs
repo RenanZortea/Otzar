@@ -24,7 +24,7 @@ async fn main() -> shuttle_axum::ShuttleAxum {
 
     // FIX 2: Use ServeConfig::new() instead of builder pattern for Dioxus 0.7+
     // We unwrap() because new() returns a Result
-    let config = ServeConfig::new().unwrap();
+    let config = ServeConfig::new();
 
     let router = Router::new()
         .serve_dioxus_application(config, App);

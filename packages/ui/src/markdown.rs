@@ -30,7 +30,7 @@ pub fn render_markdown(markdown: &str) -> String {
 
     markdown_to_html(markdown, &options)
 }
-
+#[allow(dead_code)]
 /// Extract plain text from markdown while preserving math literal content.
 pub fn extract_plain_text(markdown: &str) -> String {
     let mut options = Options::default();

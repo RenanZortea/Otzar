@@ -11,7 +11,7 @@ shuttle-runtime = { version = "0.57.0", optional = true }
 ui = { workspace = true }
 
 [features]
-default = []
+default = ["server"]
 web = ["dioxus/web"]
 server = ["dioxus/server", "ui/server", "dep:shuttle-runtime", "dep:shuttle-axum"]
 shuttle-runtime = ["dep:shuttle-runtime"]
